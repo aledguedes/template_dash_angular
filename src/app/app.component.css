@@ -1,0 +1,44 @@
+app-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 4rem;
+  z-index: 2;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  z-index: 1;
+  /* background-color: #000; */
+}
+
+app-sidenav {
+  position: absolute;
+  left: 0;
+  width: 60px;
+  height: calc(100vh - 4rem);
+  background-color: rgba(34, 34, 34, 1); ;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-top: 5px solid #FFF;
+  overflow-x: hidden;
+  white-space: nowrap;
+  transition: widht 250ms ease-in;
+}
+
+.app-side-nav-open {
+  width: 250px;
+}
+
+.content-area {
+  position: absolute;
+  left: 60px;
+  width: calc(100wh - 60px);
+  transition: left 250ms ease-in, widht 250ms ease-in;
+}
+
+.content-area-shirink {
+  width: calc(100% - 250px);
+  left: 250px;
+}

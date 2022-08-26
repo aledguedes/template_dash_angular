@@ -1,0 +1,11 @@
+<div class="container-fluid g-0">
+  <app-header (sideNavToggled)="sideNavStatus = $event;"></app-header>
+  <main>
+    <app-sidenav [sideNavStatus]="sideNavStatus" [ngClass]="{ 'app-side-nav-open' : sideNavStatus }"></app-sidenav>
+
+    <!-- content-area -->
+    <div class="content-area p-3" [ngClass]="{ 'content-area-shirink' : sideNavStatus }" >
+      <h1>Content Área do xandão pra teste de área</h1>
+    </div>
+  </main>
+</div>
